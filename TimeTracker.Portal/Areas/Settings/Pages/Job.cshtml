@@ -171,7 +171,7 @@
         $('#delete-confirm').unbind('click').on('click', function (id) {
             $.ajax({
                 type: "POST",
-                url: "Job?handler=Delete",
+                url: "/Settings/Job?handler=Delete",
                 data: { id: deleteId },
                 headers: {
                     "RequestVerificationToken": '@GetAntiXsrfRequestToken()'

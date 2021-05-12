@@ -196,7 +196,7 @@
         $('#delete-confirm').unbind('click').on('click', function (id) {
             $.ajax({
                 type: "POST",
-                url: "Index?handler=Delete",
+                url: "/Tracker/Index?handler=Delete",
                 data: { id: deleteId },
                 headers: {
                     "RequestVerificationToken": '@GetAntiXsrfRequestToken()'
